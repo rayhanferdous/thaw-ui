@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header-menu > .btn {
+        @apply !h-7 !min-h-[28px] !border !border-primary-border;
+    }
+    .table > thead {
+        @apply sticky top-0 z-[12];
+    }
+    .table :where(thead) :where(th, td) {
+        @apply !bg-[#F9F9FA];
+    }
+    .table :where(tbody th, tbody td) {
+        @apply !bg-white;
+    }
+
+    .table:where(:not(.table-zebra)) :where(thead, tbody) :where(th, td) {
+        @apply border-[#E4E3E7] !rounded-none;
+    }
+
+    .checkbox {
+        @apply !border-[#BAB8C1];
+    }
+}
+
+@font-face {
+    font-family: "GeneralSans-Regular";
+    src: url("/../../public/fonts/GeneralSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GeneralSans-Medium";
+    src: url("/../../public/fonts/GeneralSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GeneralSans-Semibold";
+    src: url("/../../public/GeneralSans-Semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
