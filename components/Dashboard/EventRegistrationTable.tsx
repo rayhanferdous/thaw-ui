@@ -8,31 +8,31 @@ function EventRegistrationTable() {
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert Foxm",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert Foxn",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert Foxu",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert p",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert g",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
@@ -50,19 +50,19 @@ function EventRegistrationTable() {
         },
         {
             avater: "/assets/avater.png",
-            name: "Robert Fox",
+            name: "Robert Fox0",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Leslie Alexander",
+            name: "Leslie Alexander8",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
         {
             avater: "/assets/avater.png",
-            name: "Eleanor Pena",
+            name: "Eleanor Penah",
             event: "Event Name",
             date: "Mar 21, 2023",
         },
@@ -86,7 +86,7 @@ function EventRegistrationTable() {
                 </thead>
                 <tbody>
                     {tableData.map((item) => (
-                        <tr>
+                        <tr key={item.name}>
                             <th>
                                 <label>
                                     <input type="checkbox" className="checkbox" />
