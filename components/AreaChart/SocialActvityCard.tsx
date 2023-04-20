@@ -12,9 +12,9 @@ interface Props {
 const SocialActvityCard: React.FC<Props> = ({ title, total, percentage, compare, negativeValue }) => {
     return (
         <div className="px-6 py-4 border w-[259px] h-[114px] bg-white">
-            <div className="font-general-sans-medium text-sm text-dashboard-text font-medium">{title}</div>
+            <div className="font-general-sans text-sm text-dashboard-text font-medium">{title}</div>
             <div className="flex items-center gap-2">
-                <p className="font-general-sans-medium text-3xl mt-2 text-dashboard-text font-medium">{total}</p>
+                <p className="font-general-sans text-3xl mt-2 text-dashboard-text font-medium">{total}</p>
                 <div
                     className={`${
                         !negativeValue ? "bg-secondery" : "bg-lite-red"

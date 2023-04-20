@@ -26,9 +26,7 @@ module.exports = {
                 "2xl-max": { max: "1459px" },
             },
             fontFamily: {
-                "general-sans-regular": ["GeneralSans-Regular", "sans-serif"],
-                "general-sans-medium": ["GeneralSans-Medium", "sans-serif"],
-                "general-sans-semibold": ["GeneralSans-Semibold", "sans-serif"],
+                "general-sans": ["GeneralSans", "sans-serif"],
             },
             colors: {
                 primary: "#2463AC",

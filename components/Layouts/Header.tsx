@@ -23,12 +23,12 @@ function Header() {
                             <rect width="1" height="22" fill="#1C487C" />
                         </svg>
 
-                        <div className="dropdown header-menu">
+                        <div className="dropdown header-menu ">
                             <label
                                 tabIndex={0}
                                 className="btn btn-sm flex items-center gap-2 btn-ghost rounded-btn  text-sm"
                             >
-                                <div>Acme Company</div>
+                                <div className="text-white font-sm-medium">Acme Company</div>
                                 <UpDownSvg />
                             </label>
                             <ul

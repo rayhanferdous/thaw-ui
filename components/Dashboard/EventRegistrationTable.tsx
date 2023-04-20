@@ -72,27 +72,27 @@ function EventRegistrationTable() {
             <table className="table w-full">
                 {/* head */}
                 <thead>
-                    <tr>
-                        <th>
-                            <label>
+                    <tr className="border-b">
+                        <th className="!border-r">
+                            <label className="border-r">
                                 <input type="checkbox" className="checkbox" />
                             </label>
                         </th>
-                        <th>Name</th>
-                        <th>Event</th>
-                        <th>Date</th>
+                        <th className="border-r">Name</th>
+                        <th className="border-r">Event</th>
+                        <th className="border-r">Date</th>
                         <th>Network</th>
                     </tr>
                 </thead>
                 <tbody>
                     {tableData.map((item) => (
                         <tr key={item.name}>
-                            <th>
+                            <th className="border-r">
                                 <label>
                                     <input type="checkbox" className="checkbox" />
                                 </label>
                             </th>
-                            <td>
+                            <td className="border-r">
                                 <div className="flex items-center space-x-3">
                                     <div className="avatar">
                                         <div className="mask mask-squircle w-12 h-12">
@@ -104,8 +104,8 @@ function EventRegistrationTable() {
                                     </div>
                                 </div>
                             </td>
-                            <td>{item.event}</td>
-                            <td>{item.date}</td>
+                            <td className="border-r">{item.event}</td>
+                            <td className="border-r">{item.date}</td>
                             <th>
                                 <button className="btn btn-ghost btn-xs">FB</button>
                                 <button className="btn btn-ghost btn-xs">FB</button>
@@ -120,4 +120,3 @@ function EventRegistrationTable() {
 }
 
 export default EventRegistrationTable;
-K

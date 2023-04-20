@@ -19,7 +19,7 @@ const HeaderMenuCard: React.FC<Props> = ({ title, icon, link, active }) => {
                 } flex items-center gap-2 px-4 h-11`}
             >
                 <div>{icon}</div>
-                <div>{title}</div>
+                <div className="text-white font-sm-medium">{title}</div>
             </li>
         </Link>
     );

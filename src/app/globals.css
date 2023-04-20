@@ -23,27 +23,28 @@
     .checkbox {
         @apply !border-[#BAB8C1];
     }
+    .font-sm-medium {
+        @apply font-general-sans font-medium text-sm;
+    }
 }
 
 @font-face {
-    font-family: "GeneralSans-Regular";
-    src: url("/../../public/fonts/GeneralSans-Regular.woff2") format("woff2");
+    font-family: "GeneralSans";
+    src: url("/public/fonts/GeneralSans-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
-
 @font-face {
-    font-family: "GeneralSans-Medium";
-    src: url("/../../public/fonts/GeneralSans-Medium.woff2") format("woff2");
+    font-family: "GeneralSans";
+    src: url("/public/fonts/GeneralSans-Medium.ttf") format("truetype");
     font-weight: 500;
     font-display: swap;
     font-style: normal;
 }
-
 @font-face {
-    font-family: "GeneralSans-Semibold";
-    src: url("/../../public/GeneralSans-Semibold.woff2") format("woff2");
+    font-family: "GeneralSans";
+    src: url("/public/fonts/GeneralSans-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-display: swap;
     font-style: normal;

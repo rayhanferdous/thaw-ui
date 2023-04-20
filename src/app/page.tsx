@@ -15,8 +15,8 @@ export default function Home() {
         <div>
             <div className="pt-8 pb-4 w-full flex justify-between gap-6 flex-col md:flex-row">
                 <div>
-                    <div className="font-general-sans-medium text-2xl text-primary-text">Overview Dashboard</div>
-                    <p className="font-general-sans-regular text-sm text-secondery-text">
+                    <div className="font-sm-medium !text-2xl text-primary-text">Overview Dashboard</div>
+                    <p className="font-sm-medium !font-normal text-secondery-text">
                         Track your activity and Campaign performance
                     </p>
                 </div>
@@ -27,7 +27,7 @@ export default function Home() {
                     <Dropdown />
                 </div>
             </div>
-            <div className="flex-wrap flex items-center gap-4 2xl:flex-nowrap 2xl:justify-between mt-4 pb-6">
+            <div className="flex-wrap flex items-center gap-4 overscroll-x-scroll 2xl:justify-between mt-4 pb-6">
                 {DashboardCardList.map((item) => (
                     <DashboardCard
                         key={item.title}
@@ -53,7 +53,7 @@ export default function Home() {
                     <ApexChart />
                 </ChartContainerCard>
             </div>
-            <div className="mt-6 bg-white px-6 py-4 rounded-md">
+            <div className="mt-6 bg-white px-6 py-4 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.10)]">
                 <InvestorCountry />
             </div>
             <div className="mt-6 w-[1440px]">
