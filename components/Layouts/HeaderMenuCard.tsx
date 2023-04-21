@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 interface Props {
     title: string;
     active: boolean;
@@ -19,7 +18,7 @@ const HeaderMenuCard: React.FC<Props> = ({ title, icon, link, active }) => {
                 } flex items-center gap-2 px-4 h-11`}
             >
                 <div>{icon}</div>
-                <div className="text-white font-sm-medium">{title}</div>
+                <div className="text-white font-sm-medium lg-max:hidden">{title}</div>
             </li>
         </Link>
     );

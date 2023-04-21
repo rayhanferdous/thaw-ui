@@ -27,7 +27,7 @@ export default function Home() {
                     <Dropdown />
                 </div>
             </div>
-            <div className="flex-wrap flex items-center gap-4 overscroll-x-scroll 2xl:justify-between mt-4 pb-6">
+            <div className="flex items-center gap-4 !overflow-x-auto justify-between mt-4 pb-6">
                 {DashboardCardList.map((item) => (
                     <DashboardCard
                         key={item.title}
@@ -39,7 +39,7 @@ export default function Home() {
                     />
                 ))}
             </div>
-            <div className="grid 2xl:grid-cols-2 gap-4 w-full">
+            <div className="grid 2xl:grid-cols-2 gap-4 w-full overscroll-x-hidden">
                 <ChartContainerCard title="Network Pitch Deck Visits">
                     <ApexChart />
                 </ChartContainerCard>
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="mt-6 w-[1440px]">
                 <ChartContainerCard title="Network Social Activity">
                     <>
-                        <div className="flex items-center w-full gap-4 2xl-max:flex-wrap 2xl:flex-nowrap mb-2">
+                        <div className="flex items-center w-full !overflow-x-auto mb-2">
                             {SocialActvityCardList.map((item) => (
                                 <SocialActvityCard
                                     key={item.title}
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="grid 2xl:grid-cols-2 mt-6 pb-14 gap-5">
                 <ChartContainerCard title="Networks Events">
                     <>
-                        <div className="flex items-center mb-2">
+                        <div className="flex items-center w-full !overflow-x-auto mb-2">
                             {NetworkEventCardList.map((item) => (
                                 <SocialActvityCard
                                     key={item.title}

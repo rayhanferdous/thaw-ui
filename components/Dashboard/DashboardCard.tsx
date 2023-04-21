@@ -11,7 +11,7 @@ interface Props {
 
 const DashboardCard: React.FC<Props> = ({ title, total, percentage, compare, negativeValue }) => {
     return (
-        <div className="px-6 py-4 xs-max:w-full xs:w-[259px] h-[114px] shadow-[0_4px_12px_rgba(0,0,0,0.10)] rounded-lg bg-white">
+        <div className="px-6 py-4 min-w-[259px] h-[114px] shadow-[0_4px_12px_rgba(0,0,0,0.10)] rounded-lg bg-white">
             <div className="font-sm-medium text-dashboard-text">{title}</div>
             <div className="flex items-center gap-2">
                 <p

@@ -1,3 +1,8 @@
+import Link from "next/link";
+import TwitterSvg from "../Svg/TwitterSvg";
+import LinkedInSvg from "../Svg/LinkedInSvg";
+import GmailSvg from "../Svg/GmailSvg";
+
 function EventRegistrationTable() {
     const tableData = [
         {
@@ -78,10 +83,10 @@ function EventRegistrationTable() {
                                 <input type="checkbox" className="checkbox" />
                             </label>
                         </th>
-                        <th className="border-r">Name</th>
-                        <th className="border-r">Event</th>
-                        <th className="border-r">Date</th>
-                        <th>Network</th>
+                        <th className="border-r font-sm-medium text-primary-text">Name</th>
+                        <th className="border-r font-sm-medium text-primary-text">Event</th>
+                        <th className="border-r font-sm-medium text-primary-text">Date</th>
+                        <th className="font-sm-medium text-primary-text">Network</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -100,16 +105,24 @@ function EventRegistrationTable() {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="font-bold">{item.name}</div>
+                                        <div className="font-sm-medium text-primary-text">{item.name}</div>
                                     </div>
                                 </div>
                             </td>
-                            <td className="border-r">{item.event}</td>
-                            <td className="border-r">{item.date}</td>
+                            <td className="border-r font-sm-medium text-primary-text">{item.event}</td>
+                            <td className="border-r font-sm-medium text-primary-text">{item.date}</td>
                             <th>
-                                <button className="btn btn-ghost btn-xs">FB</button>
-                                <button className="btn btn-ghost btn-xs">FB</button>
-                                <button className="btn btn-ghost btn-xs">FB</button>
+                                <div className="flex items-center gap-2.5">
+                                    <Link href="/#">
+                                        <TwitterSvg />
+                                    </Link>
+                                    <Link href="/#">
+                                        <LinkedInSvg />
+                                    </Link>
+                                    <Link href="/#">
+                                        <GmailSvg />
+                                    </Link>
+                                </div>
                             </th>
                         </tr>
                     ))}
