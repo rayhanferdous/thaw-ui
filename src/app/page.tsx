@@ -56,10 +56,10 @@ export default function Home() {
             <div className="mt-6 bg-white px-6 py-4 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.10)]">
                 <InvestorCountry />
             </div>
-            <div className="mt-6 w-[1440px]">
+            <div className="mt-6 ">
                 <ChartContainerCard title="Network Social Activity">
                     <>
-                        <div className="flex items-center w-full !overflow-x-auto mb-2">
+                        <div className="flex items-center gap-4 py-3 px-2 w-full !overflow-x-auto mb-2">
                             {SocialActvityCardList.map((item) => (
                                 <SocialActvityCard
                                     key={item.title}
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="grid 2xl:grid-cols-2 mt-6 pb-14 gap-5">
                 <ChartContainerCard title="Networks Events">
                     <>
-                        <div className="flex items-center w-full !overflow-x-auto mb-2">
+                        <div className="flex items-center w-full gap-4 py-3 px-2 !overflow-x-auto mb-2">
                             {NetworkEventCardList.map((item) => (
                                 <SocialActvityCard
                                     key={item.title}
