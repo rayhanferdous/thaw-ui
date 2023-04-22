@@ -1,19 +1,21 @@
 "use client";
 import ChartContainerCard from "../AreaChart/ChartContainerCard";
 import SocialActvityCard from "../AreaChart/SocialActvityCard";
-import { SocialActvityCardList } from "../AreaChart/SocialActvityCardList";
 import ApexChart from "../AreaChart/AreaChartCard";
 import { useState } from "react";
-type Props = {};
+type Props = {
+    title: string;
+    dataList: any[];
+};
 
-const SocialActivityChart = (props: Props) => {
+const SocialActivityChart: React.FC<Props> = ({ dataList, title }) => {
     const [activeSocialActivity, setActiveSocialActivity] = useState(1);
     return (
         <div className="mt-6 ">
-            <ChartContainerCard title="Network Social Activity">
+            <ChartContainerCard title={title}>
                 <>
                     <div className="flex items-center gap-4 py-3 px-2 w-full cursor-pointer !overflow-x-auto mb-2">
-                        {SocialActvityCardList.map((item, index) => (
+                        {dataList.map((item, index) => (
                             <SocialActvityCard
                                 key={item.title}
                                 active={++index == activeSocialActivity}

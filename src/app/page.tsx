@@ -8,6 +8,7 @@ import EventRegistrationTable from "../../components/Dashboard/EventRegistration
 import { DashboardCardList } from "../../components/Dashboard/DashboardCardList";
 import { NetworkEventCardList } from "../../components/AreaChart/NetworkEventCardList";
 import SocialActivityChart from "../../components/SocialActivity/SocialActivityChart";
+import { SocialActvityCardList } from "../../components/AreaChart/SocialActvityCardList";
 
 export default function Home() {
     return (
@@ -56,25 +57,10 @@ export default function Home() {
                 <InvestorCountry />
             </div>
             {/* social activity */}
-            <SocialActivityChart />
+            <SocialActivityChart title="Network Social Activity" dataList={SocialActvityCardList} />
             <div className="grid 2xl:grid-cols-2 mt-6 pb-14 gap-5">
-                <ChartContainerCard title="Networks Events">
-                    <>
-                        {/* <div className="flex items-center w-full gap-4 py-3 px-2 !overflow-x-auto mb-2">
-                            {NetworkEventCardList.map((item) => (
-                                <SocialActvityCard
-                                    key={item.title}
-                                    title={item.title}
-                                    total={item.total}
-                                    compare={item.compare}
-                                    percentage={item.percentage}
-                                    negativeValue={item.negativeValue}
-                                />
-                            ))}
-                        </div> */}
-                        <ApexChart />
-                    </>
-                </ChartContainerCard>
+                <SocialActivityChart title="Networks Events" dataList={NetworkEventCardList} />
+
                 <ChartContainerCard title="Network Social Activity">
                     <EventRegistrationTable />
                 </ChartContainerCard>
