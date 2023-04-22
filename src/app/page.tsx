@@ -12,8 +12,8 @@ import { SocialActvityCardList } from "../../components/AreaChart/SocialActvityC
 
 export default function Home() {
     return (
-        <div>
-            <div className="pt-8 pb-4 w-full flex justify-between gap-6 flex-col md:flex-row">
+        <div className="flex flex-col gap-5">
+            <div className="pt-8 w-full flex justify-between gap-6 flex-col md:flex-row">
                 <div>
                     <div className="font-sm-medium !text-2xl text-primary-text">Overview Dashboard</div>
                     <p className="font-sm-medium !font-normal text-secondery-text">
@@ -27,7 +27,7 @@ export default function Home() {
                     <Dropdown />
                 </div>
             </div>
-            <div className="flex items-center gap-4 !overflow-x-auto justify-between mt-4 pb-6">
+            <div className="flex items-center gap-4 !overflow-x-auto justify-between p-2">
                 {DashboardCardList.map((item) => (
                     <DashboardCard
                         key={item.title}
@@ -39,7 +39,7 @@ export default function Home() {
                     />
                 ))}
             </div>
-            <div className="grid grid-cols-2 gap-4 w-full overscroll-x-hidden">
+            <div className="grid grid-cols-2 p-2 gap-4 w-full overscroll-x-hidden">
                 <ChartContainerCard title="Network Pitch Deck Visits">
                     <ApexChart />
                 </ChartContainerCard>
@@ -53,12 +53,13 @@ export default function Home() {
                     <ApexChart />
                 </ChartContainerCard>
             </div>
-            <div className="mt-6 bg-white px-6 py-4 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.10)]">
+            <div className="p-2">
                 <InvestorCountry />
             </div>
-            {/* social activity */}
-            <SocialActivityChart title="Network Social Activity" dataList={SocialActvityCardList} />
-            <div className="grid 2xl:grid-cols-2 mt-6 pb-14 gap-5">
+            <div className="p-2">
+                <SocialActivityChart title="Network Social Activity" dataList={SocialActvityCardList} />
+            </div>
+            <div className="grid 2xl:grid-cols-2 p-2 pb-14 gap-5">
                 <SocialActivityChart title="Networks Events" dataList={NetworkEventCardList} />
 
                 <ChartContainerCard title="Network Social Activity">

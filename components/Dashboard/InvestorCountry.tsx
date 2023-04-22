@@ -11,7 +11,7 @@ function InvestorCountry() {
         { country: "Russia", investor: 12, position: "right-52 top-28" },
     ];
     return (
-        <div>
+        <div className="bg-white px-6 py-4 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.10)]">
             <div>Invistor by Country</div>
             <div>
                 <InvestorCard title="Investor" total="1722" percentage="+2.1%" compare="1606" />
