@@ -5,8 +5,8 @@ function UpDownSvg() {
                 d="M4.6667 9.99992L8.00004 13.3333L11.3334 9.99992M4.6667 5.99992L8.00004 2.66659L11.3334 5.99992"
                 stroke="#43B6E5"
                 strokeWidth="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             />
         </svg>
     );

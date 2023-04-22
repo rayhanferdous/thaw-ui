@@ -1,3 +1,5 @@
+"use client";
+
 interface InvestoCounterByCountryProps {
     investor: number;
     country: string;
@@ -13,7 +15,10 @@ function InvestoCounterByCountry({ investor, country, position }: InvestoCounter
             >
                 {investor}
             </div>
-            <div tabIndex={0} className="dropdown-content !-left-20 !-bottom-[4.5rem] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <div
+                tabIndex={0}
+                className="dropdown-content !-left-20 !-bottom-[4.5rem] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
                 <div>{country}</div>
                 <div className="text-white">{investor} Investors</div>
             </div>

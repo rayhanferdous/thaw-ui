@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import TwitterSvg from "../Svg/TwitterSvg";
 import LinkedInSvg from "../Svg/LinkedInSvg";

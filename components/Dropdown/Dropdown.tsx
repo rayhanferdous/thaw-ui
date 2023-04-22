@@ -1,11 +1,10 @@
+"use client";
 function Dropdown() {
     return (
         <div className="dropdown">
             <label tabIndex={0} className="btn m-1 !bg-white !h-[34px] !min-h-[34px] border border-secondery-border">
                 <div className="flex items-center">
-                    <p className="font-sm-medium !font-normal text-sm capitalize text-secondery-text">
-                        Campaign: All
-                    </p>
+                    <p className="font-sm-medium !font-normal text-sm capitalize text-secondery-text">Campaign: All</p>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M5 7.5L10 12.5L15 7.5"

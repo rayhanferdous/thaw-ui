@@ -3,7 +3,7 @@ import React from "react";
 function LinkedInSvg() {
     return (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_295_884)">
+            <g clipPath="url(#clip0_295_884)">
                 <path
                     d="M17.2727 0H2.72727C1.22104 0 0 1.22104 0 2.72727V17.2727C0 18.779 1.22104 20 2.72727 20H17.2727C18.779 20 20 18.779 20 17.2727V2.72727C20 1.22104 18.779 0 17.2727 0Z"
                     fill="#0077B5"

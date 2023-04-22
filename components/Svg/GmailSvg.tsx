@@ -16,8 +16,8 @@ function GmailSvg() {
                 fill="#FFBC00"
             />
             <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.54544 9.77458L2.76447 6.01247L4.54544 3.86548L9.99997 7.95638L15.4545 3.86548V9.77458L9.99997 13.8655L4.54544 9.77458Z"
                 fill="#FF4131"
             />

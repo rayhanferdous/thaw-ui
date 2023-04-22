@@ -1,3 +1,4 @@
+"use client";
 import DecreaseArrow from "../Svg/DashboardCard/DecreaseArrow";
 import IncreaseArrow from "../Svg/DashboardCard/IncreaseArrow";
 

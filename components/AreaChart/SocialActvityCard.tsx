@@ -1,3 +1,4 @@
+"use client";
 import DecreaseArrow from "../Svg/DashboardCard/DecreaseArrow";
 import IncreaseArrow from "../Svg/DashboardCard/IncreaseArrow";
 
@@ -7,11 +8,16 @@ interface Props {
     percentage: string;
     compare: string;
     negativeValue: boolean;
+    active?: boolean;
+    onClick?: () => void;
 }
 
-const SocialActvityCard: React.FC<Props> = ({ title, total, percentage, compare, negativeValue }) => {
+const SocialActvityCard: React.FC<Props> = ({ title, total, percentage, compare, negativeValue, active, onClick }) => {
     return (
-        <div className="px-6 py-4 min-w-[259px] h-[114px] shadow-[0_4px_12px_rgba(0,0,0,0.10)] rounded-lg bg-white">
+        <div
+            onClick={onClick}
+            className="px-6 py-4 min-w-[259px] h-[114px] shadow-[0_4px_12px_rgba(0,0,0,0.10)] rounded-lg bg-white"
+        >
             <div className="font-sm-medium text-dashboard-text">{title}</div>
             <div className="flex items-center gap-2">
                 <p

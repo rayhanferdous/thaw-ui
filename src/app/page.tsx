@@ -1,14 +1,13 @@
-"use clients";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import DashboardCard from "../../components/Dashboard/DashboardCard";
-import { DashboardCardList } from "../../components/Dashboard/DashboardCardList";
 import ApexChart from "../../components/AreaChart/AreaChartCard";
 import ChartContainerCard from "../../components/AreaChart/ChartContainerCard";
 import InvestorCountry from "../../components/Dashboard/InvestorCountry";
 import SocialActvityCard from "../../components/AreaChart/SocialActvityCard";
-import { SocialActvityCardList } from "../../components/AreaChart/SocialActvityCardList";
-import { NetworkEventCardList } from "../../components/AreaChart/NetworkEventCardList";
 import EventRegistrationTable from "../../components/Dashboard/EventRegistrationTable";
+import { DashboardCardList } from "../../components/Dashboard/DashboardCardList";
+import { NetworkEventCardList } from "../../components/AreaChart/NetworkEventCardList";
+import SocialActivityChart from "../../components/SocialActivity/SocialActivityChart";
 
 export default function Home() {
     return (
@@ -39,7 +38,7 @@ export default function Home() {
                     />
                 ))}
             </div>
-            <div className="grid 2xl:grid-cols-2 gap-4 w-full overscroll-x-hidden">
+            <div className="grid grid-cols-2 gap-4 w-full overscroll-x-hidden">
                 <ChartContainerCard title="Network Pitch Deck Visits">
                     <ApexChart />
                 </ChartContainerCard>
@@ -56,29 +55,12 @@ export default function Home() {
             <div className="mt-6 bg-white px-6 py-4 rounded-md shadow-[0_4px_12px_rgba(0,0,0,0.10)]">
                 <InvestorCountry />
             </div>
-            <div className="mt-6 ">
-                <ChartContainerCard title="Network Social Activity">
-                    <>
-                        <div className="flex items-center gap-4 py-3 px-2 w-full !overflow-x-auto mb-2">
-                            {SocialActvityCardList.map((item) => (
-                                <SocialActvityCard
-                                    key={item.title}
-                                    title={item.title}
-                                    total={item.total}
-                                    compare={item.compare}
-                                    percentage={item.percentage}
-                                    negativeValue={item.negativeValue}
-                                />
-                            ))}
-                        </div>
-                        <ApexChart />
-                    </>
-                </ChartContainerCard>
-            </div>
+            {/* social activity */}
+            <SocialActivityChart />
             <div className="grid 2xl:grid-cols-2 mt-6 pb-14 gap-5">
                 <ChartContainerCard title="Networks Events">
                     <>
-                        <div className="flex items-center w-full gap-4 py-3 px-2 !overflow-x-auto mb-2">
+                        {/* <div className="flex items-center w-full gap-4 py-3 px-2 !overflow-x-auto mb-2">
                             {NetworkEventCardList.map((item) => (
                                 <SocialActvityCard
                                     key={item.title}
@@ -89,7 +71,7 @@ export default function Home() {
                                     negativeValue={item.negativeValue}
                                 />
                             ))}
-                        </div>
+                        </div> */}
                         <ApexChart />
                     </>
                 </ChartContainerCard>

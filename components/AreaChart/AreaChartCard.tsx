@@ -4,13 +4,16 @@ import { ApexOptions } from "apexcharts";
 
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-const ApexChart: React.FC = () => {
+interface Props {
+    stateObj?: number[];
+}
+
+const ApexChart: React.FC<Props> = ({ stateObj = [11, 32, 45, 32, 34, 52, 41] }) => {
     const state = {
         series: [
-            
             {
                 name: "series2",
-                data: [11, 32, 45, 32, 34, 52, 41],
+                data: stateObj,
             },
         ],
     };

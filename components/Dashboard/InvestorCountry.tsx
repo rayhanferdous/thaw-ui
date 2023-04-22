@@ -1,3 +1,4 @@
+"use client";
 import InvestorCard from "./InvestorCard";
 import WorldMap from "../Svg/WorldMap";
 import InvestoCounterByCountry from "./InvestoCounterByCountry";
@@ -18,9 +19,9 @@ function InvestorCountry() {
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <WorldMap className="w-[862px] h-[419px] lg-max:w-full" />
-                    {investorData.map((item) => (
+                    {investorData.map((item, key) => (
                         <InvestoCounterByCountry
-                            key={item.country}
+                            key={key}
                             country={item.country}
                             investor={item.investor}
                             position={item.position}
